@@ -1,0 +1,89 @@
+/* Estilos del header y navegación */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#main-nav ul li {
+    margin: 0 15px;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    #main-nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #main-nav ul.active {
+        display: flex;
+    }
+
+    #main-nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Contenido principal centrado */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 100px auto 0 auto; /* Centrado y con espacio superior */
+}
+
+/* Recuadro de fondo blanco semi-transparente para texto */
+.text-background {
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para el footer */
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
