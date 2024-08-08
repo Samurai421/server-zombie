@@ -6,6 +6,14 @@
     <title>Descargas - Servidor Apocalipsis Zombie</title>
     <link rel="stylesheet" href="descargas.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para ocultar los videos inicialmente */
+        .video-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,22 +40,55 @@
         <!-- Apartado para Tlauncher version -->
         <div class="tlauncher-section">
             <h3>Tlauncher Version</h3>
-            <p><a href="enlace-a-tlauncher">Descargar Tlauncher</a></p>
-            <p><a href="enlace-a-video-tutorial">Ver Video Tutorial</a></p>
+            <p><a href="server-zombie-TLauncher.zip">modpack TL</a></p>
+            <p><a href="#" onclick="mostrarVideo('tlauncher-video')">Ver Video Tutorial</a></p>
+            <div id="tlauncher-video" class="video-container">
+                <video width="640" height="360" controls>
+                    <source src="tutorialTL.webm" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
         </div>
 
         <!-- Nuevo apartado para Oficial Launcher / otros -->
         <div class="official-launcher-section">
             <h3>Oficial Launcher / Otros</h3>
-            <p><a href="enlace-a-oficial-launcher">Descargar Oficial Launcher</a></p>
-            <p><a href="enlace-a-video-tutorial-oficial">Ver Video Tutorial</a></p>
+            <p><a href="Server-zombie-oficial_Launcher.zip">Modpack</a></p>
+            <p><a href="#" onclick="mostrarVideo('official-launcher-video')">Ver Video Tutorial</a></p>
+            <div id="official-launcher-video" class="video-container">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/hc5SoiJYwFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
+
+        <section id="registro-usuario">
+            <h3>Registro de Usuario de Minecraft</h3>
+            <p>Registra por primera vez tu Usuario para tener acceso al server, puede tardar hasta 24 horas</p>
+            <form action="https://formsubmit.co/mateotapia421@gmail.com" method="POST">
+                <label for="minecraft-usuario">Nombre de Usuario de Minecraft:</label>
+                <input type="text" id="minecraft-usuario" name="minecraft_usuario" required>
+                <input type="hidden" name="_subject" value="Nuevo Usuario de Minecraft">
+                <input type="hidden" name="_next" value="https://zombie-craft.netlify.app/descargas">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
     </section>
 
     <footer class="site-footer">
         <p>&copy; 2024 Servidor Apocalipsis Zombie. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function mostrarVideo(videoId) {
+            // Ocultar todos los videos
+            const videos = document.querySelectorAll('.video-container');
+            videos.forEach(video => video.style.display = 'none');
+            
+            // Mostrar el video seleccionado
+            const video = document.getElementById(videoId);
+            if (video) {
+                video.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
