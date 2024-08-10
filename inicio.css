@@ -125,3 +125,19 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+
+
+/* Centrar contenido de las nuevas secciones */
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo general para las secciones nuevas */
+.centered-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}

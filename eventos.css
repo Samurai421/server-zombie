@@ -143,3 +143,19 @@ ul {
 p {
     margin-bottom: 10px;
 }
+
+
+.container-f {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+container-f p {
+    margin: 0;
+    font-size: 14px;
+}
