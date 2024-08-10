@@ -6,6 +6,26 @@
     <title>Wiki - Servidor Apocalipsis Zombie</title>
     <link rel="stylesheet" href="wiki.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Agrega estilos básicos para el índice */
+        .index {
+            margin: 20px 0;
+        }
+        .index ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .index li {
+            margin-bottom: 10px;
+        }
+        .index a {
+            text-decoration: none;
+            color: #333;
+        }
+        .index a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,20 +45,160 @@
     </header>
 
     <section id="wiki" class="container">
-        <h2>Wiki</h2>
-        <p>Encuentra tutoriales y guías sobre los mods y el servidor.</p>
+        <h2>Guía Expandida para los Mods y Consejos en Tu Servidor de Minecraft</h2>
+        <hr>
+
+        <!-- Índice -->
+        <div class="index">
+            <h3>Índice</h3>
+            <ul>
+                <li><a class="index_a"href="#mods">1. Mods Clave y Cómo Usarlos</a></li>
+                <li><a class="index_a"href="#consejos">2. Consejos de Supervivencia para el Servidor</a></li>
+                <li><a class="index_a"href="#configuraciones">3. Configuraciones Clave del Servidor</a></li>
+                <li><a class="index_a"href="#zombis">4. Zombis en el Servidor: Guía de Supervivencia</a></li>
+            </ul>
+        </div>
+
+        <h3 id="mods">1. Mods Clave y Cómo Usarlos</h3>
+
+        <h4>1.1. <strong>Dynamic Surroundings</strong></h4>
+        <p><strong>Descripción:</strong> Mejora la experiencia ambiental del juego con efectos de clima, sonido y visuales.</p>
+        <p><strong>Uso Inicial:</strong></p>
         <ul>
-            <li><a href="tutorial-mod1.html">Tutorial del Mod 1</a></li>
-            <li><a href="tutorial-mod2.html">Tutorial del Mod 2</a></li>
-            <!-- Agrega más tutoriales aquí -->
+            <li><strong>Efectos Climáticos:</strong> Presta atención a las tormentas, nieblas y cambios de clima. Los efectos visuales como la lluvia y la nieve pueden reducir la visibilidad.</li>
+            <li><strong>Sonidos Ambientales:</strong> Los sonidos de tormenta o animales pueden alertarte sobre la presencia de mobs cercanos.</li>
         </ul>
+        <p><strong>Consejo:</strong> Ajusta tu estrategia en función de las condiciones climáticas. Por ejemplo, durante tormentas fuertes, busca refugio para evitar daños y mantener la visibilidad.</p>
+
+        <h4>1.2. <strong>Tough As Nails</strong></h4>
+        <p><strong>Descripción:</strong> Introduce mecánicas de temperatura y sed que afectan la supervivencia.</p>
+        <p><strong>Uso Inicial:</strong></p>
+        <ul>
+            <li><strong>Temperatura:</strong> Mantén tu temperatura en niveles óptimos con ropa adecuada para cada clima. Usa chaquetas para el frío y ropa ligera para el calor.</li>
+            <li><strong>Sed:</strong> Bebe agua regularmente para evitar la deshidratación. Usa recipientes para almacenar y transportar agua.</li>
+        </ul>
+        <p><strong>Consejo:</strong> Construye un refugio para protegerte de condiciones extremas y usa mochilas para llevar agua mientras exploras.</p>
+
+        <h4>1.3. <strong>Traveler's Backpack</strong></h4>
+        <p><strong>Descripción:</strong> Añade mochilas con inventarios adicionales y capacidades especiales.</p>
+        <p><strong>Uso Inicial:</strong></p>
+        <ul>
+            <li><strong>Equipar la Mochila:</strong> Coloca la mochila en el espacio de tu personaje para aumentar tu capacidad de almacenamiento.</li>
+            <li><strong>Funciones Especiales:</strong> Explora las características adicionales como almacenamiento de líquidos y herramientas.</li>
+        </ul>
+        <p><strong>Consejo:</strong> Personaliza tu mochila para tener acceso rápido a recursos esenciales. Usa mochilas con capacidades de almacenamiento avanzadas para explorar eficazmente.</p>
+
+        <h4>1.4. <strong>Immersive Engineering</strong></h4>
+        <p><strong>Descripción:</strong> Añade maquinaria avanzada y tecnologías para mejorar la recolección de recursos y la automatización.</p>
+        <p><strong>Uso Inicial:</strong></p>
+        <ul>
+            <li><strong>Construcción Básica:</strong> Comienza con máquinas simples como el generador de energía y la prensa para procesar materiales.</li>
+            <li><strong>Avance Tecnológico:</strong> Utiliza las máquinas para crear herramientas avanzadas y procesar minerales de manera eficiente.</li>
+        </ul>
+        <p><strong>Consejo:</strong> Consulta las guías del mod para aprender a construir y utilizar cada máquina. La tecnología avanzada será crucial para mejorar tu producción y automatización.</p>
+
+        <h4>1.5. <strong>Xaero's Minimap</strong></h4>
+        <p><strong>Descripción:</strong> Añade un minimapa que facilita la navegación y la exploración del mundo.</p>
+        <p><strong>Uso Inicial:</strong></p>
+        <ul>
+            <li><strong>Activación del Mapa:</strong> Usa la tecla <strong>M</strong> para abrir el minimapa.</li>
+            <li><strong>Marcadores:</strong> Añade marcadores a ubicaciones importantes para facilitar la exploración.</li>
+        </ul>
+        <p><strong>Consejo:</strong> Utiliza el minimapa para orientarte y marcar áreas de interés, recursos importantes y la ubicación de tu base.</p>
+
+        <h4>1.6. <strong>JourneyMap</strong></h4>
+        <p><strong>Descripción:</strong> Proporciona un mapa completo del mundo y funciones de teletransporte.</p>
+        <p><strong>Uso Inicial:</strong></p>
+        <ul>
+            <li><strong>Mapa Completo:</strong> Accede al mapa global con la tecla <strong>J</strong>.</li>
+            <li><strong>Waypoints:</strong> Añade puntos de interés y ubica rápidamente lugares importantes.</li>
+        </ul>
+        <p><strong>Consejo:</strong> Usa los waypoints para marcar ubicaciones de interés, como minas y estructuras. Esto te ayudará a navegar y planificar expediciones.</p>
+
+        <h3 id="consejos">2. Consejos de Supervivencia para el Servidor</h3>
+
+        <h4>2.1. <strong>Recolección y Construcción Inicial</strong></h4>
+        <p><strong>Recolección:</strong> Inicia recolectando madera, piedra y carbón. Estos materiales son esenciales para tus herramientas básicas y la construcción de un refugio inicial.</p>
+        <p><strong>Construcción de Refugio:</strong> Construye un refugio seguro usando madera y piedra. Asegúrate de que esté bien protegido para evitar ataques de mobs y condiciones climáticas adversas.</p>
+
+        <h4>2.2. <strong>Gestión del Clima y Temperatura</strong></h4>
+        <p><strong>Protección:</strong> Usa ropa adecuada y construye refugios para mantener tu temperatura corporal estable. Las condiciones extremas pueden afectar tu salud y capacidad de realizar tareas.</p>
+        <p><strong>Equipamiento:</strong> Equípate con chaquetas y botas según el clima para evitar daños por temperaturas extremas. Asegúrate de tener un refugio adecuado para protegerte de los cambios climáticos bruscos.</p>
+
+        <h4>2.3. <strong>Manejo del Agua y Sed</strong></h4>
+        <p><strong>Recogida de Agua:</strong> Usa recipientes para recolectar y almacenar agua. Lleva siempre agua contigo usando tu mochila para evitar deshidratación durante tus exploraciones.</p>
+        <p><strong>Filtrado:</strong> Si el mod proporciona opciones para filtrar agua, úsalas para asegurar que el agua que consumes esté limpia y segura.</p>
+
+        <h4>2.4. <strong>Exploración y Expansión</strong></h4>
+        <p><strong>Exploración:</strong> Utiliza el mapa de Xaero (M) y JourneyMap (J) para explorar el entorno y marcar ubicaciones importantes.</p>
+        <p><strong>Expansión:</strong> A medida que avances, construye nuevas estructuras y usa maquinaria avanzada de Immersive Engineering para mejorar tu base y optimizar la recolección de recursos.</p>
+
+        <h3 id="configuraciones">3. Configuraciones Clave del Servidor</h3>
+
+        <p>Asegúrate de ajustar la configuración del juego y del servidor para una experiencia óptima:</p>
+        <ul>
+            <li><strong>Render Distance:</strong> Mantén la distancia de renderizado entre 5 a 7 para equilibrar el rendimiento y la visibilidad.</li>
+            <li><strong>Gráficos y Partículas:</strong> Usa gráficos en 0 (rápidos) y partículas en 1 para mejorar el rendimiento del servidor y reducir el uso de recursos.</li>
+        </ul>
+
+        <h3 id="zombis">4. Zombis en el Servidor: Guía de Supervivencia</h3>
+
+        <h4>4.1. <strong>Tipos de Zombis y Sus Características</strong></h4>
+
+        <h5>4.1.1. <strong>Zombis Básicos</strong></h5>
+        <p><strong>Descripción:</strong> Los zombis básicos son los enemigos más comunes. Son lentos y tienen una cantidad moderada de salud.</p>
+        <p><strong>Consejo:</strong> Mantén una distancia segura y usa armas de largo alcance o trampas para eliminarlos sin exponerte a peligro innecesario.</p>
+
+        <h5>4.1.2. <strong>Zombis Rápidos</strong></h5>
+        <p><strong>Descripción:</strong> Estos zombis se mueven más rápido que los básicos, lo que los hace más difíciles de evadir.</p>
+        <p><strong>Consejo:</strong> Usa el entorno a tu favor. Crea barricadas y trampas para ralentizarlos y enfrentarlos con armas más poderosas.</p>
+
+        <h5>4.1.3. <strong>Zombis de Elite</strong></h5>
+        <p><strong>Descripción:</strong> Estos zombis tienen una mayor cantidad de salud y pueden infligir más daño.</p>
+        <p><strong>Consejo:</strong> Prepárate bien antes de enfrentarte a ellos. Lleva contigo equipo de alta calidad y considera formar un equipo con otros jugadores para derrotarlos más fácilmente.</p>
+
+        <h5>4.1.4. <strong>Zombis Especiales</strong></h5>
+        <p><strong>Descripción:</strong> Los zombis especiales pueden tener habilidades únicas, como lanzar proyectiles o causar efectos de estado.</p>
+        <p><strong>Consejo:</strong> Aprende las habilidades de cada tipo de zombi especial y ajusta tu estrategia en consecuencia. Ten a mano pociones y equipo para contrarrestar sus habilidades.</p>
+
+        <h4>4.2. <strong>Preparación y Equipamiento Contra Zombis</strong></h4>
+
+        <h5>4.2.1. <strong>Armas y Herramientas</strong></h5>
+        <p><strong>Armas de Fuego:</strong> Utiliza armas de fuego para atacar a zombis a distancia. Asegúrate de tener suficiente munición.</p>
+        <p><strong>Armas de Melee:</strong> Las armas cuerpo a cuerpo, como espadas y hachas, son útiles para combates cercanos. Opta por armas de alta durabilidad para enfrentar a zombis con eficacia.</p>
+
+        <h5>4.2.2. <strong>Armaduras y Protecciones</strong></h5>
+        <p><strong>Armadura:</strong> Equípate con armaduras resistentes que ofrezcan una buena protección contra el daño de los zombis. La armadura de hierro o diamante es altamente recomendada.</p>
+        <p><strong>Escudos:</strong> Usa escudos para bloquear ataques y reducir el daño recibido durante el combate.</p>
+
+        <h5>4.2.3. <strong>Pociones y Mejora de Equipo</strong></h5>
+        <p><strong>Pociones de Curación:</strong> Lleva contigo pociones de curación para recuperarte rápidamente durante el combate.</p>
+        <p><strong>Mejoras de Equipo:</strong> Usa encantamientos para mejorar tus armas y armaduras. Encantamientos como <strong>Protección</strong> y <strong>Empuje</strong> pueden ser muy útiles en combate.</p>
+
+        <h4>4.3. <strong>Defensa de la Base Contra Zombis</strong></h4>
+
+        <h5>4.3.1. <strong>Construcción de Barricadas</strong></h5>
+        <p><strong>Muros y Puertas:</strong> Construye muros altos y coloca puertas reforzadas para proteger tu base de los ataques de zombis.</p>
+        <p><strong>Trampas:</strong> Instala trampas, como fosas con pinchos, alrededor de tu base para ralentizar o eliminar zombis que intenten entrar.</p>
+
+        <h5>4.3.2. <strong>Iluminación y Visibilidad</strong></h5>
+        <p><strong>Ilumina tu Base:</strong> Asegúrate de que tu base esté bien iluminada para evitar que los zombis aparezcan cerca. Coloca antorchas y otras fuentes de luz en el exterior e interior de tu base.</p>
+        <p><strong>Observación:</strong> Usa ventanas y plataformas elevadas para vigilar el área alrededor de tu base y anticipar ataques de zombis.</p>
+
+        <h4>4.4. <strong>Estrategias de Combate y Sobrevivencia</strong></h4>
+
+        <h5>4.4.1. <strong>Formación de Equipos</strong></h5>
+        <p><strong>Colabora con Otros Jugadores:</strong> Forma equipos con otros jugadores para enfrentar a grupos grandes de zombis. La cooperación aumenta tus posibilidades de supervivencia.</p>
+        <p><strong>Distribuye Tareas:</strong> Asigna roles específicos a los miembros del equipo, como el líder de ataque, el soporte de curación y el explorador.</p>
+
+        <h5>4.4.2. <strong>Planificación de Expediciones</strong></h5>
+        <p><strong>Exploración Segura:</strong> Planifica tus expediciones y siempre lleva contigo suministros esenciales. Considera las rutas de escape en caso de encuentros inesperados con zombis.</p>
+        <p><strong>Puntos de Rescate:</strong> Marca puntos de rescate y refugios seguros en el mapa para regresar rápidamente en caso de emergencia.</p>
+
     </section>
 
-    <!-- Cambia la clase del footer -->
     <footer class="site-footer">
         <p>&copy; 2024 Servidor Apocalipsis Zombie. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
